@@ -28,15 +28,10 @@ public class AV_Favorites extends CustomRelic{
     @Override
     public void onUseCard(AbstractCard card, UseCardAction action) {
         //在用户使用牌时触发
-        if (card.type == AbstractCard.CardType.SKILL) {
+        if (card.type == AbstractCard.CardType.ATTACK) {
             this.counter++;
-            if (this.counter % 2 == 0) {
-                //如果是2的倍数，counter=0和获得5点格挡
-                this.counter = 0;
-                flash();
-                AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new RelicAboveCreatureAction((AbstractCreature)AbstractDungeon.player, (AbstractRelic)this));
-                AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new GainBlockAction((AbstractCreature)AbstractDungeon.player, (AbstractCreature)AbstractDungeon.player, 6));
-            }
+            //todo
+            card.baseDamage  = card.baseDamage + this.counter;
         }
     }
 
