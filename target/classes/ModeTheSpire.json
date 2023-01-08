@@ -1,0 +1,13 @@
+{
+  "modid": "Iron_Man",
+  "name": "tie_ge",
+  "author_list": [
+    "祁祁祁"
+  ],
+  "description": "为游戏添加一个铁哥的可选角色。",
+  "dependencies": [
+    "basemod"
+  ],
+  "version": "0.0.1",
+  "sts_version": "01-05-2023"
+}

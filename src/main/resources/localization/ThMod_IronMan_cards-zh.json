@@ -1,0 +1,10 @@
+{
+  "Strike_IronMan": {
+    "NAME": "撸一管",
+    "DESCRIPTION": "造成 !D! 点伤害。"
+  },
+  "Defend_IronMan": {
+    "NAME": "贤者时间",
+    "DESCRIPTION": "获得 !B! 点格挡。"
+  }
+}
